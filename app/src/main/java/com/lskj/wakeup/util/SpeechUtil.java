@@ -1,4 +1,4 @@
-package com.lskj.wakeup.biz;
+package com.lskj.wakeup.util;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -21,6 +21,9 @@ import com.iflytek.cloud.VoiceWakeuper;
 import com.iflytek.cloud.WakeuperListener;
 import com.iflytek.cloud.WakeuperResult;
 import com.iflytek.cloud.util.ResourceUtil;
+import com.lskj.wakeup.biz.AsrResultModel;
+import com.lskj.wakeup.biz.SpeechContent;
+import com.lskj.wakeup.biz.VoiceResultListener;
 
 import org.json.JSONArray;
 import org.json.JSONException;

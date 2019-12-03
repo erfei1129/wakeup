@@ -1,4 +1,4 @@
-package com.lskj.wakeup.biz;
+package com.lskj.wakeup.util;
 
 import android.annotation.SuppressLint;
 import android.text.TextUtils;

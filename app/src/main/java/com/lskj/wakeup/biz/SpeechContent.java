@@ -1,5 +1,8 @@
 package com.lskj.wakeup.biz;
 
+import com.lskj.wakeup.R;
+import com.lskj.wakeup.util.SpeechUtil;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,6 +14,41 @@ import java.util.List;
 public class SpeechContent {
 
     private static SpeechContent mInstance;
+    // ----------------------------------------------图片-----------------------------------------------
+    public static int[] dayWeatherDrawables = new int[]{
+            R.drawable.icon_weather_day_type_0, R.drawable.icon_weather_day_type_1, R.drawable.icon_weather_day_type_2,
+            R.drawable.icon_weather_day_type_3, R.drawable.icon_weather_day_type_4, R.drawable.icon_weather_day_type_5,
+            R.drawable.icon_weather_day_type_6, R.drawable.icon_weather_day_type_7, R.drawable.icon_weather_day_type_8,
+            R.drawable.icon_weather_day_type_9, R.drawable.icon_weather_day_type_10, R.drawable.icon_weather_day_type_11,
+            R.drawable.icon_weather_day_type_12, R.drawable.icon_weather_day_type_13, R.drawable.icon_weather_day_type_14,
+            R.drawable.icon_weather_day_type_15, R.drawable.icon_weather_day_type_16, R.drawable.icon_weather_day_type_17,
+            R.drawable.icon_weather_day_type_18, R.drawable.icon_weather_day_type_19, R.drawable.icon_weather_day_type_20,
+            R.drawable.icon_weather_day_type_21, R.drawable.icon_weather_day_type_22, R.drawable.icon_weather_day_type_23,
+            R.drawable.icon_weather_day_type_24, R.drawable.icon_weather_day_type_25, R.drawable.icon_weather_day_type_26,
+            R.drawable.icon_weather_day_type_27, R.drawable.icon_weather_day_type_28, R.drawable.icon_weather_day_type_29,
+            R.drawable.icon_weather_day_type_30, R.drawable.icon_weather_day_type_31, R.drawable.icon_weather_day_type_53,
+            R.drawable.icon_weather_day_type_301, R.drawable.icon_weather_day_type_302
+    };
+
+    public static int[] nightWeatherDrawables = new int[]{
+            R.drawable.icon_weather_night_type_0, R.drawable.icon_weather_night_type_1, R.drawable.icon_weather_night_type_2,
+            R.drawable.icon_weather_night_type_3, R.drawable.icon_weather_night_type_4, R.drawable.icon_weather_night_type_5,
+            R.drawable.icon_weather_night_type_6, R.drawable.icon_weather_night_type_7, R.drawable.icon_weather_night_type_8,
+            R.drawable.icon_weather_night_type_9, R.drawable.icon_weather_night_type_10, R.drawable.icon_weather_night_type_11,
+            R.drawable.icon_weather_night_type_12, R.drawable.icon_weather_night_type_13, R.drawable.icon_weather_night_type_14,
+            R.drawable.icon_weather_night_type_15, R.drawable.icon_weather_night_type_16, R.drawable.icon_weather_night_type_17,
+            R.drawable.icon_weather_night_type_18, R.drawable.icon_weather_night_type_19, R.drawable.icon_weather_night_type_20,
+            R.drawable.icon_weather_night_type_21, R.drawable.icon_weather_night_type_22, R.drawable.icon_weather_night_type_23,
+            R.drawable.icon_weather_night_type_24, R.drawable.icon_weather_night_type_25, R.drawable.icon_weather_night_type_26,
+            R.drawable.icon_weather_night_type_27, R.drawable.icon_weather_night_type_28, R.drawable.icon_weather_night_type_29,
+            R.drawable.icon_weather_night_type_30, R.drawable.icon_weather_night_type_31, R.drawable.icon_weather_night_type_53,
+            R.drawable.icon_weather_night_type_301, R.drawable.icon_weather_night_type_302
+    };
+
+    public static int[] contentTypeDrawables = new int[]{
+            R.drawable.icon_date, R.drawable.icon_birthday, R.drawable.icon_limit_number, R.drawable.icon_temp_humid
+    };
+
     // ------------------------------------------------命令词识别结果类型----------------------------------------
     public static final int TYPE_ALL = 0; // 闹钟响
     public static final int TYPE_DATE = 1;

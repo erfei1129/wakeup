@@ -5,7 +5,7 @@ import android.app.Application;
 import com.iflytek.cloud.Setting;
 import com.iflytek.cloud.SpeechConstant;
 import com.iflytek.cloud.SpeechUtility;
-import com.lskj.wakeup.biz.SpeechUtil;
+import com.lskj.wakeup.util.SpeechUtil;
 
 /**
  * @author Ge Xiaodong

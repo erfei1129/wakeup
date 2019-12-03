@@ -17,6 +17,8 @@ import android.widget.TextView;
 
 import com.lskj.wakeup.R;
 import com.lskj.wakeup.test.MediaPlayUtil;
+import com.lskj.wakeup.util.SpeechUtil;
+import com.lskj.wakeup.util.TimeUtil;
 
 import java.util.Date;
 
@@ -51,7 +53,7 @@ public class SpeechActivity1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main1);
         findView();
         modifySpeakText();
         SpeechUtil.getInstance().addVoiceResultListener(voiceResultListener);
@@ -211,7 +213,7 @@ public class SpeechActivity1 extends AppCompatActivity {
         translateAnimation.setDuration(15 * 1000); //动画持续的时间为15s
         translateAnimation.setRepeatCount(ValueAnimator.INFINITE);
         translateAnimation.setRepeatMode(ValueAnimator.RESTART);
-        mLlAnimView.setAnimation(translateAnimation); //给imageView添加的动画效果
+        mAnimView.setAnimation(translateAnimation); //给imageView添加的动画效果
         translateAnimation.setFillEnabled(false); //使其可以填充效果从而不回到原地
         translateAnimation.setFillAfter(false); //不回到起始位置
         //如果不添加setFillEnabled和setFillAfter则动画执行结束后会自动回到原点
